@@ -1,0 +1,48 @@
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <% if false %>
+          <a class="navbar-brand brand" href="<%= root_path %>">Oser</a>
+        <% end %>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav ">
+          <li class="<%= active_class(root_path) %>"><a href="<%= root_path %>"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+          <li class="<%= active_class(deutsch_path) %>"><%= link_to "Learning German Online", deutsch_path %></li>
+          <li class="<%= active_class(treffpunkte_path) %>"><%= link_to "California German Groups", treffpunkte_path %></li>
+          <li class="<%= active_class(espanol_path) %>"><%= link_to "Learning Spanish Online", espanol_path %></li>
+          <li class="<%= active_class(lugaresdereunion_path) %>"><%= link_to "California Spanish Groups", lugaresdereunion_path %></li>
+          <li class="<%= active_class(roma_path) %>"><%= link_to "Roma", roma_path %></li>
+          <li class="<%= active_class(posts_path) %>"><%= link_to "Jim Oser's duolingo posts", posts_path %></li>
+          <% if false # Commented out authors %> 
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Autoren<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="artikel-autor-michael-ende.html">Michael Ende</a></li>
+            <li><a href="artikel-autor-erich-kaestner.html">Erich Kästner</a></li>
+            <li><a href="artikel-autor-patrick-susking.html">Patrick Susking</a></li>
+            <li><a href="artikel-autor-mark-twain.html">Mark Twain</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="artikel-autor-u-a-m.html">u.a.m.</a></li>
+          </ul>
+        <% end #Commented out authors %> 
+        </li>
+        <% if false %>
+        <li class="<%= active_class(ueber_mich_path) %>"><%= link_to "Über mich", ueber_mich_path %></li>
+        <li class="<%= active_class(kontakt_path) %>"><a href="<%= kontakt_path%>"><span class="glyphicon glyphicon-phone-alt"></span>Kontakt</a></li>
+        <li class="<%= active_class(impressum_path) %>"><%= link_to "Impressum", impressum_path %></li>
+        <% end %>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
