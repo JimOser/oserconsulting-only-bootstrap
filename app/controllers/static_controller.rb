@@ -190,7 +190,7 @@ class StaticController < ApplicationController
     courses[0] = ["Auch du kannst das. Deutsch für Asylbewerber. Ehrenamtlich.","https://open.sap.com/courses/than1", @self_study  ]
     return (courses)
   end
-  def español 
+  def espanol 
     @hello = "Hallo Welt!"
     @moocs = Array.new
     @moocs[0]=["iversity","http://iversity.org","This MOOC has engineering and nonengineering courses, that are taught in German, Spanish, and English. The company is located in Berlin. They specialize in offering classes from European universities.", spanish_iversity_courses]

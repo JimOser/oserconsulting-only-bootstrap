@@ -1,6 +1,6 @@
 <div class="blog-post">
   <h2>Learning German Online</h2>
-  <%= render 'anylanguage.html' %>
+  <%= render partial: 'anylanguage', formats: :html  %>
   <% if false %>
   <h2 class="blog-post-title">Links to favorite German websites.</h2>
     <p class="blog-post-meta date-hidden">Samstag, 30. Juli 2016 <a href="mailto:jimoser@mac.com">Jim Oser</a></p>
@@ -469,7 +469,6 @@ Sometimes people tell me that they get DW through their Comcast cable television
   <br/>
   <br/>
 <div id="krautreporter_widget" data-posts="1"></div>
-<%= javascript_include_tag('krautreporter.js') %>
 </div>
 <% if false %>
   	  <!-- nested columns -->	
