@@ -1,7 +1,7 @@
 
 <div class="blog-post">
   <h2>Learning Spanish Online</h2>
-  <%= render 'anylanguage.html' %>
+  <%= render partial: 'anylanguage', formats: :html  %>
 <ul class="list-group">
   <li class="list-group-item">
   <h3>Online Spanish Library</h3>
@@ -390,7 +390,7 @@ Hace unos días vi un documental en Netflix titulado “Minimalismo: Un document
 <ul class="list-group">
   <li class="list-group-item">
     <%= link_to "Download antennapod-feeds.opml", "/antennapod-feeds.opml" %>
-    <%= render 'antennapod-feeds.html' %>
+    <%= render partial: 'antennapod-feeds', formats: :opml  %>
   </li>
 </ul>
 <ul class="list-group">
