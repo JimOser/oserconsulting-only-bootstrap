@@ -199,11 +199,9 @@ class StaticController < ApplicationController
     @moocs[3]=["futurelearn.com","https://www.futurelearn.com/programs/spanish-for-beginners","OPEN UNIVERSITY PROGRAM, Spanish for Beginners, This program of six free online Spanish courses, created by The Open University, will help you develop your skills in Spanish at a basic level and introduce you to the Spanish-speaking world.", spanish_futurelearn_courses]
     @moocs[4]=["miriadax.net","https://miriadax.net/","Courses about many things, but primarily engineering and computer courses, that are taught in Spanish.",spanish_miriadax_courses]
   end
-  if false  # Not used code
-  def lugaresdereunión 
+  def lugaresdereunion 
     @meetings = Array.new
   end
-  end # Not used code
   def roma
   end
   def posts
