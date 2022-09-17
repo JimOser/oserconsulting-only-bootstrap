@@ -131,7 +131,7 @@ class StaticController < ApplicationController
     }     
     @meetings.push(hash)
   end
-  def über_mich
+  def ueber_mich
   end
   def kontakt
   end
