@@ -54,6 +54,10 @@ gem "bootsnap", require: false
 
 #JHO 9/15/2022 for roma.html.haml
 gem 'haml'
+# https://github.com/ytbryan/emd
+# for markdown files, file suffix is md
+gem 'redcarpet'
+gem 'emd'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
