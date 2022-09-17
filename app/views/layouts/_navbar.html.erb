@@ -9,23 +9,23 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<%= root_path %>">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<%= deutsch_path %>">"Learning German Online"</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Spanish</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="<%= espanol_path %>">Learning Spanish Online</a></li>
+            <li><a class="dropdown-item" href="<%= lugaresdereunion_path %>">California Spanish Groups</a></li>
+            <li><a class="dropdown-item" href="<%= roma_path %>">Roma</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<%= treffpunkte_path %>">"California German Groups"</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">German</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="<%= deutsch_path %>">Learning German Online</a></li>
+            <li><a class="dropdown-item" href="<%= treffpunkte_path %>">California German Groups</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<%=  espanol_path %>">"Learning Spanish Online"</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="<%=  lugaresdereunion_path %>">"California Spanish Groups"</a>
-        </li>
-        <li class="nav-item">
-        <li class="nav-item">
-          <a class="nav-link" href="<%= roma_path %>">"Roma"</a>
-        </li>
-          <a class="nav-link" href="<%= posts_path %>">"Jim Oser's duolingo posts"</a>
+        <li>
+          <a class="nav-link" href="<%= posts_path %>">My duolingo posts</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,6 +40,20 @@
             <li><a class="dropdown-item" href="artikel-autor-u-a-m.html">u.a.m.</a></li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="<%=  ueber_mich_path%>">Über mich</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="<%=  kontakt_path%>">Kontakt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="<%= impressum_path %>">Impressum</a>
+        </li>
+        <% if false %>
+        <li class="<%= active_class(ueber_mich_path) %>"><%= link_to "Über mich", ueber_mich_path %></li>
+        <li class="<%= active_class(kontakt_path) %>"><a href="<%= kontakt_path%>"><span class="glyphicon glyphicon-phone-alt"></span>Kontakt</a></li>
+        <li class="<%= active_class(impressum_path) %>"><%= link_to "Impressum", impressum_path %></li>
+        <% end %>
       </ul>
     </div>
   </div>
