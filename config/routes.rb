@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/deutsch', to: 'static#deutsch'
+  get '/newsletter', to: 'static#newsletter'
   get '/treffpunkte', to: 'static#treffpunkte'
   get '/espanol', to: 'static#espanol'
   get '/posts', to: 'static#posts'

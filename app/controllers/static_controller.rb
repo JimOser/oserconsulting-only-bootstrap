@@ -6,6 +6,8 @@ class StaticController < ApplicationController
   def index
     @hello = "Hallo Welt!"
   end
+  def newletter
+  end
   def german_iversity_courses
     courses = Array.new
     courses[0] = ["Changemaker MOOC","https://iversity.org/de/courses/changemaker-mooc-social-entrepreneurship-november-2015", @self_study ]
