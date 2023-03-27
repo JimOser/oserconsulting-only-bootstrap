@@ -1,4 +1,9 @@
 # README
+https://www.oserconsulting.com
+
+rails 7.0.4
+
+ruby 3.1.2
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
